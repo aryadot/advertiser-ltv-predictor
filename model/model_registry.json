@@ -1,0 +1,60 @@
+[
+  {
+    "version": "v20260224_152318",
+    "trained_at": "2026-02-24T15:23:18.953798",
+    "model_type": "XGBRegressor",
+    "features": [
+      "recency_days",
+      "frequency",
+      "avg_order_value",
+      "max_order_value",
+      "min_order_value",
+      "total_items",
+      "avg_item_price",
+      "total_freight",
+      "freight_ratio",
+      "unique_products",
+      "unique_sellers",
+      "avg_installments",
+      "avg_review_score",
+      "customer_lifetime_days",
+      "orders_per_month",
+      "state_encoded"
+    ],
+    "n_train": 74203,
+    "n_test": 18551,
+    "r2": 0.9995,
+    "rmse_log": 0.0206,
+    "mae_log": 0.0057,
+    "rmse_dollars": 9.53,
+    "mae_dollars": 2.03,
+    "model_path": "../model/ltv_pipeline_v20260224_152318.pkl"
+  },
+  {
+    "version": "v20260224_152944",
+    "trained_at": "2026-02-24T15:29:44.147750",
+    "model_type": "XGBRegressor",
+    "features": [
+      "recency_days",
+      "frequency",
+      "total_items",
+      "avg_item_price",
+      "freight_ratio",
+      "unique_products",
+      "unique_sellers",
+      "avg_installments",
+      "avg_review_score",
+      "customer_lifetime_days",
+      "orders_per_month",
+      "state_encoded"
+    ],
+    "n_train": 74685,
+    "n_test": 18672,
+    "r2": 0.9471,
+    "rmse_log": 0.2045,
+    "mae_log": 0.072,
+    "rmse_dollars": 91.39,
+    "mae_dollars": 23.74,
+    "model_path": "../model/ltv_pipeline_v20260224_152944.pkl"
+  }
+]
